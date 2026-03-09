@@ -9,9 +9,11 @@ from typing import Optional, List
 import models
 import schemas
 from database import get_db, engine
+from fastapi.middleware.cors import CORSMiddleware
 
 # Create tables
 models.Base.metadata.create_all(bind=engine)
+origins = ["*"]
 
 app = FastAPI(
     title="Invoice Recovery Case Tracker API",
@@ -22,7 +24,7 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],  # React dev servers
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
