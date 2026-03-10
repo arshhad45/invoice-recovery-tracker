@@ -1,6 +1,6 @@
 # Invoice Recovery Case Tracker
 
-A mini internal CRM system for PayAssured to track clients, their unpaid invoices, and recovery follow-up progress. hi bro
+A mini internal CRM system for PayAssured to track clients, their unpaid invoices, and recovery follow-up progress. hi bro hi
 
 ## Tech Stack
 
