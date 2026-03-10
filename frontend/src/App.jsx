@@ -10,7 +10,7 @@ function Navigation() {
   
   return (
     <div className="header">
-      <h1>Financial Invoice Recovery Case Tracker</h1>
+      <h1>Financial Invoice Recovery Case Tracker!!</h1>
       <nav className="nav">
         <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
           Case List
